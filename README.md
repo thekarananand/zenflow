@@ -8,7 +8,9 @@
 ### Local Setup Web Server
 
 ``` bash
-git clone https://github.com/thekarananand/taskcontrol
+git clone https://github.com/thekarananand/taskcontrol.git
+
+cd ./taskcontrol
 
 python3 manage.py makemigration
 python3 manage.py migrate
