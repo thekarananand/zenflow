@@ -115,9 +115,11 @@ main section[data-on-top="true"] {
 
 nav li {
     margin-bottom: 1ch;
+    transition: 40ms ease-in;
 }
 
 nav li[data-section-selected="true"] {
+    
     margin-bottom: 0ch;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;

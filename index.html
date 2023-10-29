@@ -1,21 +1,16 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        TaskControl
-    </title>
-    <link href="{% static 'global.css' %}" rel="stylesheet">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="MasterContainer">
         <nav>
             <ul>
-                <li data-section-selected="true"><a href="#Section1" data-section="1">Workbench</a></li>
+                <li data-section-selected="true"><a href="#Section1" data-section="1">Task & Time</a></li>
                 <li data-section-selected="false"><a href="#Section2" data-section="2">Projects</a></li>
                 <li data-section-selected="false"><a href="#Section3" data-section="3">Mood Tracker</a></li>
             </ul>
@@ -23,7 +18,7 @@
         <main>
             <section id="Section1" data-on-top="true">
                 <div class="data">
-                    <h2>Workbench</h2>
+                    <h2>Task & Time</h2>
 
                     <ul>
                         <li>
@@ -130,8 +125,7 @@
             </section>
         </main>
     </div>
-    <script src="{% static 'script.js' %}"></script>
+    <script src="script.js"></script>
 
 </body>
-
 </html>
