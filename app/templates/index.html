@@ -1,0 +1,137 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        TaskControl
+    </title>
+    <link href="{% static 'global.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="MasterContainer">
+        <nav>
+            <ul>
+                <li data-section-selected="true"><a href="#Section1" data-section="1">Task & Time</a></li>
+                <li data-section-selected="false"><a href="#Section2" data-section="2">Projects</a></li>
+                <li data-section-selected="false"><a href="#Section3" data-section="3">Mood Tracker</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="Section1" data-on-top="true">
+                <div class="data">
+                    <h2>Task & Time</h2>
+
+                    <ul>
+                        <li>
+                            <div class="details">
+                                <h3>Clean Worktable</h3>
+                                <p>Sort Notes, Questions Papers & Rough Papers.</p>
+                            </div>
+                            <div class="time">
+                                <button>Start</button>
+                                <time><span>00:00:00</span></time>
+                                <button>Done</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="details">
+                                <h3>Study Microprocessor</h3>
+                                <p>Timing Diagram of 8085,and Basics of 8255A</p>
+                            </div>
+                            <div class="time">
+                                <button>Start</button>
+                                <time><span>00:00:00</span></time>
+                                <button>Done</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="details">
+                                <h3>Complete Control System Notes</h3>
+                                <p>Stability of Control Systems</p>
+                            </div>
+                            <div class="time">
+                                <button>Start</button>
+                                <time><span>00:00:00</span></time>
+                                <button>Done</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="Section2" data-on-top="false">
+                <div class="data">
+                    <h2>Projects</h2>
+                    <div class="ProjectContainer">
+                        <article>
+                            <h3>Not Started</h3>
+                            <ul>
+                                <li>
+                                    <h4>Study Docker Compose</h4>
+                                </li>
+                                <li>
+                                    <h4>Train ML Model</h4>
+                                </li>
+                                <li>
+                                    <h4>Study Docker Compose</h4>
+                                </li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3>In Progress</h3>
+                            <ul>
+                                <li>
+                                    <h4>Study Docker Compose</h4>
+                                    <p>Karan Anand</p>
+                                    <p>Energy Level: 5</p>
+                                </li>
+                                <li>
+                                    <h4>Train ML Model</h4>
+                                    <p>Yash Rastogi</p>
+                                    <p>Energy Level: 3</p>
+                                </li>
+                                <li>
+                                    <h4>Study Docker Compose</h4>
+                                    <p>Karan Anand</p>
+                                    <p>Energy Level: 5</p>
+                                </li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3>Done</h3>
+                            <ul>
+                                <li>
+                                    <h4>Study Docker Compose</h4>
+                                    <p>Karan Anand</p>
+                                    <p>Energy Level: 5</p>
+                                </li>
+                                <li>
+                                    <h4>Train ML Model</h4>
+                                    <p>Yash Rastogi</p>
+                                    <p>Energy Level: 3</p>
+                                </li>
+                                <li>
+                                    <h4>Study Docker Compose</h4>
+                                    <p>Karan Anand</p>
+                                    <p>Energy Level: 5</p>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="Section3" data-on-top="false">
+                <div class="data">
+                    <h2>Mood Tracker</h2>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="{% static 'script.js' %}"></script>
+
+</body>
+
+</html>

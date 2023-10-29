@@ -1,5 +1,7 @@
 # TaskControl
 
+![Screenshot of TaskControl App](media_files/ScreenShot.png)
+
 ### Dependencies 
 
 - Python3
