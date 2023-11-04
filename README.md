@@ -1,4 +1,4 @@
-# TaskControl
+# zenflow
 
 ![Screenshot of TaskControl App](media_files/ScreenShot.png)
 
@@ -10,9 +10,9 @@
 ### Local Setup Web Server
 
 ``` bash
-git clone https://github.com/thekarananand/taskcontrol.git
+git clone https://github.com/thekarananand/zenflow.git
 
-cd ./taskcontrol
+cd ./zenflow
 
 python3 manage.py makemigration
 python3 manage.py migrate
